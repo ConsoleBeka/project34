@@ -1,0 +1,16 @@
+using System;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
+
+            static void Main1(phone)
+            {
+                TwilioClient.Init(
+                    Environment.GetEnvironmentVariable("***********"),
+                    Environment.GetEnvironmentVariable("***********"));
+MessageResource.Create(
+    to: new PhoneNumber(phone),
+    from: new PhoneNumber("*************"),
+    body: "User has been succesfully registered");
+            }
+ од был интегрирован в Main, и не работал из-за ошибки, ответ на которую, € в гугле не нашел.
